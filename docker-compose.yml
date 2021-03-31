@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  fibonacci:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - PORT=3333
+    command: /app/run_tests.sh
